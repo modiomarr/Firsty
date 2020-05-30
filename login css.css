@@ -3,27 +3,6 @@
 body {
 	background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX32338951.jpg);
 	background-size: cover;
-
-
-	
-}
-
-div {
-
-	
-		border:7px dotted rgba(255, 0, 0, 0.8);
-		text-align: center;
-		
-
-}
-ul{
-	
-}
-li{
-	display: inline-block;
-	
-	font-size: 50px;
-
 }
 h2{
 	text-align: center;
