@@ -16,15 +16,6 @@ div {
 		background-color: rgba(0, 0, 255, 0.2);
 
 }
-ul{
-	
-}
-li{
-	display: inline-block;
-	list-style-type: square;
-	font-size: 50px;
-	text-decoration: none;
-
 }
 h2{
 	text-align: center;
