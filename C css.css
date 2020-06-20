@@ -1,17 +1,13 @@
-.container{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 2fr;
+body{
+    margin: 0 auto;
 }
-
-
-
-
 .zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
     cursor:pointer;
-    display:inline-block;
-    text-align: center;
-    font-size:10em;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
@@ -24,6 +20,55 @@
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.nav-main{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+@media only screen and (max-width: 600px){
+    .nav-main{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+li{
+    padding: 20px;
+}
+a{
+    color: #f5f5f6;
+    text-decoration: none;
+}
+.push{
+    margin-left: auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.box > img{
+    width: 100%;
+}
+.box{
+    padding: 30px;
+    margin: 5px;
+}
+footer{
+    text-align: center;
+}
+.cover{
+    background-image: url(https://cdn.downtoearth.org.in/library/large/2019-12-04/0.92334300_1575475699_17.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
@@ -76,31 +121,4 @@
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Purple Background
- **********************************************************************/
-.purple {
-    background: #A88BEB; /* Old browsers */
-    background: -moz-linear-gradient(top, #A88BEB 0%, #F1A7F1 44%, #F8CEEC 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A88BEB), color-stop(44%,#F1A7F1), color-stop(100%,#F8CEEC)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* IE10+ */
-    background: linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Brown Background
- **********************************************************************/
-.brown {
-    background: #f6e6b4; /* Old browsers */
-    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* IE10+ */
-    background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
 }
